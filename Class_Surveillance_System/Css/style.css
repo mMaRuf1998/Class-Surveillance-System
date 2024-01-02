@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #0468bf;
+  --bg2-color: #52b5f2;
+  --light-color: #27a4f2;
+  --Snd-color: #91e0f2;
+  --trd-color: #2a3bd2;
+  --text-color: #fff;
+  --black: #000;
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    height: 85px;
+    background-color: var(--bg2-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .hTitle{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .hTitle a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 2px 4px var(--black);
+}
+.header .hTitle a:hover{
+    transition: 0.5s ease-in;
+    text-decoration: underline;
+}
+
+.header .hTitle img{
+    height: 60px;
+}
+.header .menubar{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .menubar a{
+    padding: 1% 1.5%;
+    text-decoration: none;
+    color: var(--trd-color);
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--black);
+}
+
+.header .menubar a:hover{
+    transition: 0.3s ease-in;
+    color: var(--text-color);
+    background-color: var(--trd-color);
+    box-shadow: 3px 3px 3px var(--text-color);
+}
+.header .menubar1{
+    width: 50%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+.header .menubar1 a{
+    width: 120px;
+    text-align: center;
+    margin: 5px;
+    padding: 1% 1.5%;
+    text-decoration: none;
+    color: var(--trd-color);
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px var(--black);
+}
+
+.header .menubar1 a:hover{
+    transition: 0.3s ease-in;
+    color: var(--text-color);
+    background-color: var(--trd-color);
+}
+
+.mainCR{
+    margin: 0;
+    padding: 3%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+
+
+.mainCR h1{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    padding-left: 5%;
+}
+.mainCR p{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-left: 5%;
+}
+.mainCR .searchBox{
+    padding: 2%;
+    background-color: var(--text-color);
+    box-shadow: inset 3px 3px 6px var(--black);
+    border-radius: 25px;
+}
+
+.mainCR .searchBox form{
+    display: flex;
+    flex-direction: column;
+}
+.mainCR .searchBox .inputBox{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainCR .searchBox .inputBox span{
+    color: var(--trd-color);
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+}
+.mainCR .searchBox .inputBox input{
+    width: 65%;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(216, 215, 250);
+    border: 1px solid var(--bg-color);
+    border-radius: 3px;
+}
+.mainCR .searchBox .inputBox input:hover{
+    background-color: rgb(255, 255, 255);
+    
+}
+.btn{
+    text-decoration: none;
+    margin-top: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.btn:hover{
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    background-color: var(--trd-color);
+    color: var(--text-color);
+    padding: 3px 15px;
+}
+
+.btn5{
+    text-decoration: none;
+    margin-top: 1px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 1px 2pxx;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+.btn5:hover{
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    background-color: var(--trd-color);
+    color: var(--text-color);
+    padding: 3px 15px;
+}
+
+
+
+.CR{
+    margin: 0;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CR h1{
+    font-size: 26px;
+    color: var(--trd-color);
+    text-align: center;
+}
+
+.CR .CRINfoH{
+    background-color: #27a4f2;
+    margin-top: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.CR .CRINfoH a{
+    font-size: 20px;
+    font-weight: 500;
+    width: 15%;
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 4px 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px var(--black);
+
+}
+
+
+.CR .CRINfo{
+    background-color: #27a4f2;
+    margin-top: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.CR .CRINfo li{
+    width: 15%;
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 6px 0px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 6px var(--black);
+}
+
+.actionBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.actionBtn a{
+    font-size: 16px;
+    text-decoration: none;
+    background-color: var(--bg2-color);
+    width: 150px;
+    color: var(--text-color);
+    margin: 2px 0px;
+    border-radius: 4px;
+}
+.actionBtn a:hover{
+    letter-spacing: 3px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    background-color: var(--trd-color);
+    width: 180px;
+}
+
+.btn1{
+    background-color: var(--text-color);
+    height: 55px;
+    align-self: center;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    padding-top: 25px;
+}
+
+.btn1:hover{
+    font-size: 22px;
+    transition: 0.3s ease;
+    letter-spacing: 2px;
+}
+
+
+.view{
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.view .viewBox{
+    background-color: var(--bg2-color);
+    min-height: 600px;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.view .viewBox .viewPart{
+    background-color: rgb(255, 255, 255);
+    margin-top: 6%;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: inset 3px 3px 6px var(--black);
+    border-radius: 10px;
+}
+
+
+.view .viewBox .viewPart span{
+    width: 30%;
+    font-size: 16px;
+    color: var(--trd-color);
+}
+
+
+.view .viewBox .viewPart input,select{
+    width: 60%;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    height: 30px;
+    border: 2px solid var(--black);
+    color: var(--text-color);
+    padding-left: 3px;
+    font-size: 18px;
+}
+.view .viewBox .viewPart select:hover{
+    cursor: pointer;
+    background-color: var(--text-color);
+}
+
+.courseAdd{
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.courseAdd form{
+    display: flex;
+    flex-direction: column;
+
+}
+.courseAdd input{
+    margin-bottom: 5px;
+    height: 40px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+
+
+
+
+                      /* Home Design */
+
+.home{
+    position: relative;
+    overflow: hidden;
+    padding: 0 200px;
+    height: 800px;
+    width: 100%;
+    background: url("../image/bg2.jpg") no-repeat;
+    background-size: cover ;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .textBox{
+    height: 500px;
+    width: 600px;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 25px;
+    box-shadow:  3px 3px 6px var(--black);
+}
+
+.home .textBox .logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2px;
+}
+
+.home .textBox .logo img{
+    height: 55px;
+    padding-left: 50px;
+}
+
+.home .textBox .logo h2{
+    color: var(--bg-color);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.home .textBox h3{
+    margin: 1px;
+    color: rgb(0, 202, 34);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.home .textBox h1{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 120px;
+    color: var(--bg-color);
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 4px var(--light-color);
+}
+
+.home .textBox p{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--bg-color);
+    letter-spacing: 8px;
+    text-shadow: 3px 3px 6px var(--light-color);
+}
+
+
+.block{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: #472a7c;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.heading{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color:#472a7c;
+}
+
+.heading span{
+    background:#472a7c ;
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+.about {
+    margin: 0px;
+    margin-top: 100px;
+    position:relative;
+    display: flex;
+}
+.about .box-container{
+    background: #eee;
+    padding: 4rem;
+    width: 50%;
+}
+.about .box-container p{
+    color: #472a7c;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.about .imgbox{
+    background: url(../image/laptop.jpg) no-repeat;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
